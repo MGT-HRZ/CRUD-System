@@ -1,0 +1,197 @@
+body {
+    padding: 0;
+	margin: 0;
+	font-family: 'Orbitron', sans-serif;
+    background-color : springgreen;
+}
+
+.nav1 {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/*header*/
+
+header {
+    background-color: limegreen;
+    padding-top: 20px;
+    min-height: 70px;
+    border-bottom: 3px solid darkgreen;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    padding: 10px 5px 10px 5px;
+    border-radius: 10px;
+}
+
+header a:hover {
+    background-color: springgreen;
+    color: black;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header nav {
+    float: right;
+    margin-top: -40px;
+}
+
+.title h1 {
+    margin: 0;
+    color: black;
+}
+
+header .current a {
+    color: white;
+    font-weight: bold;
+}
+
+header input {
+    border: 3px solid darkgreen;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    font-family: 'Orbitron', sans-serif; 
+    padding: 10px 10px;
+}
+
+.button2 {
+    border: 3px solid darkgreen;
+    border-radius: 5px;
+    background-color: forestgreen;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.button2 .search {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button2 .search:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button2:hover .search {
+  padding-right: 25px;
+  color: white;
+}
+
+.button2:hover .search:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*body*/
+
+
+
+/*footer*/
+.footer {
+    background-color: limegreen;
+    color: black;
+    border: 5px solid darkgreen;
+    padding: 3px;
+    margin-top: 721px;
+    text-align: center;
+}
+
+/*responsive*/
+@media only screen and (max-width : 500px) {
+
+    body {
+        width: 100%;
+    }
+
+    header {
+		text-align: center;
+		height: -200px;
+	}
+
+	header nav, header nav li, header a {
+		float: none;
+		display: inline;
+		width: 100%;
+		text-align: center;
+		padding: 5px 5px 5px 5px;
+	}
+
+
+    .nav1 {
+        width: 80%;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    .formbox {
+        width: 80%;
+
+    }
+
+    .field {
+        width: 83%;
+        padding: 10px 0;
+        margin: 5px 0;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 1px solid #999;
+        outline: none;
+        font-family: 'Orbitron', sans-serif;
+        background: transparent;
+    }
+
+    .submit {
+        width: 60%;
+        padding: 10px 30px;
+        cursor: pointer;
+        display: block;
+        margin-top: 30px;
+        margin-left: 30px;
+        font-family: 'Orbitron', sans-serif;
+        background: linear-gradient(to right, limegreen, cyan);
+        border: 0;
+        outline: none;
+        border-radius: 30px;
+    }
+
+    .check {
+        margin: 30px 85px 0px 0px;
+    }
+
+    span {
+        margin-left: -50px;
+        width: 60%;
+    }
+
+    .footer {
+        margin-top: 700px;
+    }
+}
