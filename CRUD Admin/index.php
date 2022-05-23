@@ -47,9 +47,9 @@
                         <a href="https://twitter.com/?lang=en"><img src="process/iconfinder_Twitter_1082437.png" width="7%"></a>
                         <a href="https://www.instagram.com/"><img src="process/iconfinder_2018_social_media_popular_app_logo_instagram_3225191.png" width="7%"></a>
                     </div>
-                    <form id="login" class="group">
-                        <input type="text" class="field" placeholder="Username" required>
-                        <input type="text" class="field" placeholder="Password" required>
+                    <form id="login" class="group" action="log.php" method="POST">
+                        <input type="text" name="user" class="field" placeholder="Username" required>
+                        <input type="text" name="pass" class="field" placeholder="Password" required>
                         <input type="checkbox" class="check"><span>Remember Password</span>
                         <button type="submit" class="submit">Login</button>
                     </form>
