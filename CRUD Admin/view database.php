@@ -49,9 +49,9 @@
     <table width="70%" style="border: 3px solid black; border-radius: 10px; background-color: white;">
         <thead>
             <th style="border-bottom: 3px solid black;">Id</th>
-            <th style="border-bottom: 3px solid black;">Nama</th>
-            <th style="border-bottom: 3px solid black;">Kelas</th>
-            <th style="border-bottom: 3px solid black;">No. KP</th>
+            <th style="border-bottom: 3px solid black;">Email</th>
+            <th style="border-bottom: 3px solid black;">Username</th>
+            <th style="border-bottom: 3px solid black;">Password</th>
             <th style="border-bottom: 3px solid black;">Action</th>
         </thead>
         <?php while($row = mysqli_fetch_assoc($result)){ ?>
